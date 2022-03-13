@@ -130,3 +130,6 @@ dmypy.json
 
 # DS Store
 *.DS_Store
+
+#h5 files
+*.h5
