@@ -1,0 +1,22 @@
+Torch Version: 1.11.0+cu102
+Available Torc Device: cuda
+
+Reading the Dataset...
+(98401, 2)
+
+Splitting the Dataset...
+(78720,) (78720,)
+(19681,) (19681,)
+Length of the Training and Test Set...
+78720 78720
+19681 19681
+
+Testing the pretrained Model:
+
+Rouge Score: {'Rouge-L-P': 0.017604779302993933, 'Rouge-L-R': 0.10717142857142853, 'Rouge-L-F': 0.10717142857142853, 'Rouge-1-P': 0.017604779302993933, 'Rouge-1-R': 0.10717142857142853, 'Rouge-1-F': 0.10717142857142853}
+
+Printing the predicted sumamry:
+
+['The company has said the March breach was not related to the latest hack that exposed the personal and financial data of over 140 million US consumers.', 'Modi also urged the officers to keep in touch with their batchmates from other services so they could always be aware of developments at home.', 'It also urged them to dial 100 and said, "Block them.', 'Ravichandran Ashwin, playing his 51st Test, crossed 2000-plus runs during his 54-run knock, becoming the quickest player to achieve the double of 2000-plus runs and 250-plus wickets in Tests.', 'The girl was allegedly raped by her 21-year-old distant cousin.', "Mexican drug lord Joaquin 'El Chapo' Guzman's ex-lover Lucero Sanchez while testifying against him at a US court revealed that he drew her into marijuana trafficking and didn't pay her for her work.", "Five associate banks and the Bharatiya Mahila Bank merged with the State Bank of India (SBI) on Saturday, moving the country's largest lender among the top 50 banks in the world.", 'Musk is seen wearing a white tuxedo jacket and a collarless shirt while Grimes appears to be wearing a choker inspired by the Tesla symbol.', 'The woman had earlier said she would not accept the Triple Talaq.', 'Rio Olympics silver medallist PV Sindhu said her India Open contest against compatriot Saina Nehwal was "just another match".']
+
+End of the job

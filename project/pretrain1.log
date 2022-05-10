@@ -1,0 +1,25 @@
+Torch Version: 1.11.0+cu102
+Available Torc Device: cpu
+
+Reading the Dataset...
+(98401, 2)
+
+Splitting the Dataset...
+(78720,) (78720,)
+(19681,) (19681,)
+Length of the Training and Test Set...
+78720 78720
+19681 19681
+
+Testing the pretrained Model:
+Input X tokenized. Generating Summary ...
+Summary Generated. Decoding Summary ...
+Summary Decoded.
+
+Printing the predicted sumamry:
+
+["The 'Symphony of the Seas' ship features a zipline and an ice rink.", 'Debt-ridden Air India has received a loan worth 11,500 crore from Bank of India to meet urgent working capital needs, according to reports.', 'Dried phoenix tree leaves, when grounded and heated to 220 oC, produced a powder of carbon microspheres.', 'Novogratz said, "We didn\'t like market conditions and we wanted to re-evaluate what we\'re doing." He further added, "I didn\'t want to have to deal with the schizophrenic emotional side of it."', 'Juicero had said its 126,000 juicer applies four tons of force to the packs to squeeze the juice.', '"We would like to know what kind of powers the RBI Governor needs," a panel official said.', 'It has allowed exchanges to set trading hours in equity derivatives between 9:00 am and 11:55 pm, effective October 1, 2018.', 'The film will revolve around the story of a lonely middle-aged spinster, portrayed by Manisha.', 'Speaking about being trolled for her dialogue, "My business is my business, none of your business" in the film \'Race 3\', actress Daisy Shah said that the memes made her more popular.', 'A Bangladesh court on Monday sentenced former Prime Minister Khaleda Zia to seven years in jail on corruption charges.']
+
+Calculating Rouge Score:
+
+Rouge Score: {'Rouge-L-P': 0.027428257223599803, 'Rouge-L-R': 0.13904761904761906, 'Rouge-L-F': 0.13904761904761906, 'Rouge-1-P': 0.027428257223599803, 'Rouge-1-R': 0.13904761904761906, 'Rouge-1-F': 0.13904761904761906}

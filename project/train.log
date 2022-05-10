@@ -1,0 +1,87 @@
+Torch Version: 1.11.0+cu102
+Available Torc Device: cpu
+
+Reading the Dataset...
+(98401, 2)
+
+Splitting the Dataset...
+(78720,) (78720,)
+(19681,) (19681,)
+Length of the Training and Test Set...
+78720 78720
+19681 19681
+
+Tokenizing the dataset
+Length of the dataset: 1000
+
+Preparing model_large for finetuning...
+
+Training...
+{'loss': 9.0646, 'learning_rate': 1e-05, 'epoch': 0.1}
+{'loss': 8.5442, 'learning_rate': 2e-05, 'epoch': 0.2}
+{'loss': 7.845, 'learning_rate': 3e-05, 'epoch': 0.3}
+{'loss': 7.4245, 'learning_rate': 4e-05, 'epoch': 0.4}
+{'loss': 6.7786, 'learning_rate': 5e-05, 'epoch': 0.5}
+{'loss': 6.4331, 'learning_rate': 4.888888888888889e-05, 'epoch': 0.6}
+{'loss': 6.2427, 'learning_rate': 4.7777777777777784e-05, 'epoch': 0.7}
+{'loss': 6.2779, 'learning_rate': 4.666666666666667e-05, 'epoch': 0.8}
+{'loss': 5.8455, 'learning_rate': 4.555555555555556e-05, 'epoch': 0.9}
+{'loss': 5.6898, 'learning_rate': 4.4444444444444447e-05, 'epoch': 1.0}
+{'loss': 5.6552, 'learning_rate': 4.3333333333333334e-05, 'epoch': 1.1}
+{'loss': 5.6679, 'learning_rate': 4.222222222222222e-05, 'epoch': 1.2}
+{'loss': 5.5837, 'learning_rate': 4.111111111111111e-05, 'epoch': 1.3}
+{'loss': 5.5092, 'learning_rate': 4e-05, 'epoch': 1.4}
+{'loss': 5.5528, 'learning_rate': 3.888888888888889e-05, 'epoch': 1.5}
+{'loss': 5.4032, 'learning_rate': 3.777777777777778e-05, 'epoch': 1.6}
+{'loss': 5.3617, 'learning_rate': 3.6666666666666666e-05, 'epoch': 1.7}
+{'loss': 5.3132, 'learning_rate': 3.555555555555556e-05, 'epoch': 1.8}
+{'loss': 5.2191, 'learning_rate': 3.444444444444445e-05, 'epoch': 1.9}
+{'loss': 5.1191, 'learning_rate': 3.3333333333333335e-05, 'epoch': 2.0}
+{'loss': 4.9922, 'learning_rate': 3.222222222222223e-05, 'epoch': 2.1}
+{'loss': 4.8054, 'learning_rate': 3.111111111111111e-05, 'epoch': 2.2}
+{'loss': 4.9336, 'learning_rate': 3e-05, 'epoch': 2.3}
+{'loss': 4.7505, 'learning_rate': 2.8888888888888888e-05, 'epoch': 2.4}
+{'loss': 4.8648, 'learning_rate': 2.777777777777778e-05, 'epoch': 2.5}
+{'loss': 4.7507, 'learning_rate': 2.6666666666666667e-05, 'epoch': 2.6}
+{'loss': 4.607, 'learning_rate': 2.5555555555555554e-05, 'epoch': 2.7}
+{'loss': 4.3708, 'learning_rate': 2.4444444444444445e-05, 'epoch': 2.8}
+{'loss': 4.3509, 'learning_rate': 2.3333333333333336e-05, 'epoch': 2.9}
+{'loss': 4.2739, 'learning_rate': 2.2222222222222223e-05, 'epoch': 3.0}
+{'loss': 4.0727, 'learning_rate': 2.111111111111111e-05, 'epoch': 3.1}
+{'loss': 3.788, 'learning_rate': 2e-05, 'epoch': 3.2}
+{'loss': 3.9351, 'learning_rate': 1.888888888888889e-05, 'epoch': 3.3}
+{'loss': 3.6126, 'learning_rate': 1.777777777777778e-05, 'epoch': 3.4}
+{'loss': 3.6046, 'learning_rate': 1.6666666666666667e-05, 'epoch': 3.5}
+{'loss': 3.3984, 'learning_rate': 1.5555555555555555e-05, 'epoch': 3.6}
+{'loss': 3.3468, 'learning_rate': 1.4444444444444444e-05, 'epoch': 3.7}
+{'loss': 3.3085, 'learning_rate': 1.3333333333333333e-05, 'epoch': 3.8}
+{'loss': 3.0717, 'learning_rate': 1.2222222222222222e-05, 'epoch': 3.9}
+{'loss': 3.0019, 'learning_rate': 1.1111111111111112e-05, 'epoch': 4.0}
+{'loss': 2.9165, 'learning_rate': 1e-05, 'epoch': 4.1}
+{'loss': 2.8464, 'learning_rate': 8.88888888888889e-06, 'epoch': 4.2}
+{'loss': 2.7701, 'learning_rate': 7.777777777777777e-06, 'epoch': 4.3}
+{'loss': 2.6228, 'learning_rate': 6.666666666666667e-06, 'epoch': 4.4}
+{'loss': 2.5978, 'learning_rate': 5.555555555555556e-06, 'epoch': 4.5}
+{'loss': 2.5329, 'learning_rate': 4.444444444444445e-06, 'epoch': 4.6}
+{'loss': 2.6701, 'learning_rate': 3.3333333333333333e-06, 'epoch': 4.7}
+{'loss': 2.5744, 'learning_rate': 2.2222222222222225e-06, 'epoch': 4.8}
+{'loss': 2.5231, 'learning_rate': 1.1111111111111112e-06, 'epoch': 4.9}
+{'loss': 2.5238, 'learning_rate': 0.0, 'epoch': 5.0}
+{'train_runtime': 4514.2918, 'train_samples_per_second': 1.108, 'train_steps_per_second': 0.111, 'train_loss': 4.6589766769409175, 'epoch': 5.0}
+
+End of Training...
+
+Testing the fineTuned model:
+Input X tokenized. Generating Summary ...
+Summary Generated. Decoding Summary ...
+Summary Decoded.
+
+Printing the predicted sumamry:
+
+["The world's largest cruise ship has been delivered", 'Air India gets 11,500 crore loan from Bank of India', 'China-based scientists find way to make electronics from tree leaves', 'Bitcoin could fall to as low as $8,000 before rebounding', 'Silicon Valley-based startup Juicero to refund all customers after they discovered chopped fruit packs can be hand-squeezed to juice', 'RBI Governor Urjit summoned to appear before Parliament panel on bank scams', 'SEBI allows stock exchanges to extend trading hours in equity derivatives', "Manisha Koirala's comeback film 'Dear Maya' trailer released", 'My business is my business, none of your business: Daisy Shah', 'Khaleda sentenced to 7 years in jail on corruption charges']
+
+Calculating Rouge Score:
+
+Rouge Score: {'Rouge-L-P': 0.009429864253393665, 'Rouge-L-R': 0.08, 'Rouge-L-F': 0.08, 'Rouge-1-P': 0.009429864253393665, 'Rouge-1-R': 0.08, 'Rouge-1-F': 0.08}
+
+End of the job
