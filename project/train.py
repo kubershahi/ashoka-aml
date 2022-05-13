@@ -117,11 +117,11 @@ def prepare_finetuning(model, train_dataset, val_dataset=None, freeze_encoder=Fa
     training_args = TrainingArguments(
       output_dir=output_dir,           # output directory
       adafactor=True,                  # use adafactor instead of AdamW
-      num_train_epochs=10,             # total number of training epochs
+      num_train_epochs=12,             # total number of training epochs
       per_device_train_batch_size=20,  # batch size per device during training, can increase if memory allows
       save_steps=1000,                    # number of updates steps before checkpoint saves
       save_total_limit=5,              # limit the total amount of checkpoints and deletes the older checkpoints
-      warmup_steps=200,                # number of warmup steps for learning rate scheduler
+      warmup_steps=500,                # number of warmup steps for learning rate scheduler
       weight_decay=0.01,               # strength of weight decay
       logging_dir='./logs',            # directory for storing logs
       logging_steps=10,
@@ -135,8 +135,25 @@ def prepare_finetuning(model, train_dataset, val_dataset=None, freeze_encoder=Fa
 
   return trainer
 
+
+print("\nPrinting the predicted sumamry - Pretrained:\n")
+
+y_test_pred_pre = get_summary(tokenizer_large, model_large, x_test_list[10])
+print(y_test_pred_pre)
+
+
+print("\nCalculating the error - Pretrained:\n")
+
+m = Rouge(variants=["L", 1], multiref="best")
+r = 0
+for i in range(0, len(x_test_list), 10):
+    y_test_pred = get_summary(tokenizer_large,model_large, x_test_list[i:i+10])
+    r = calculate_rouge(m, y_test_pred, y_test_list[i:i+10])
+print("Rouge Score: ", r)
+
+
 print("\nTokening the dataset")
-train_dataset,_ = prepare_data(tokenizer_large, x_train_list[:10000], y_train_list[:10000])
+train_dataset,_ = prepare_data(tokenizer_large, x_train_list, y_train_list)
 
 print("Length of the dataset:", len(train_dataset))
 
@@ -149,18 +166,20 @@ trainer.train()
 print("\nEnd of Training...")
 
 
-print("\nTesting the pretrained Model:")
+print("\nPrinting the predicted sumamry - Finetuned:\n")
+
+y_test_pred_fin = get_summary(tokenizer_large, model_large, x_test_list[10])
+print(y_test_pred_fin)
+
+print("\nCalculating the error - Finetuned:\n")
+
 
 m = Rouge(variants=["L", 1], multiref="best")
 r = 0
-for i in range(0, 250, 10):
+for i in range(0, len(x_test_list), 10):
     y_test_pred = get_summary(tokenizer_large,model_large, x_test_list[i:i+10])
     r = calculate_rouge(m, y_test_pred, y_test_list[i:i+10])
 
 print("Rouge Score: ", r)
-
-
-print("\nPrinting the predicted sumamry:\n")
-print(y_test_pred[:10])
 
 print("\nEnd of job")
