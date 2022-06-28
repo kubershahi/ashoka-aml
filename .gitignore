@@ -138,4 +138,4 @@ results/
 
 # envrionment folder 
 env/
-project/finetuned-model/
+finetuned-model/
