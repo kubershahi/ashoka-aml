@@ -2,7 +2,7 @@
 
 ## About
 
-Final Presentation: [project_presentation](https://github.com/kubershahi/ashoka-aml/blob/master/project_presentation.pdf)
+Final Presentation: [project_presentation.pdf](https://github.com/kubershahi/ashoka-aml/blob/master/project_presentation.pdf)
 ## Implementation
 Dataset: https://www.kaggle.com/datasets/sunnysai12345/news-summary?select=news_summary_more.csv
 
