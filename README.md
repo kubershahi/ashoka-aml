@@ -6,4 +6,9 @@ Final Presentation: [project_presentation.pdf](https://github.com/kubershahi/ash
 Dataset: [Inshorts](https://www.kaggle.com/datasets/sunnysai12345/news-summary?select=news_summary_more.csv) </br>
 Finetuned Model: [pegasus-inshorts](https://huggingface.co/kubershahi/pegasus-inshorts)
 ### Dependencies
+- Pytorch
+- Transformers
+- SetencePiece
+- Sklearn
+- Ignite Metrics
 
